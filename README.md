@@ -65,6 +65,11 @@ For testing purposes, use these credentials:
 
 Create a `.env.local` file in the root directory:
 
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/ezeats
+JWT_SECRET=your-super-secret-jwt-key-here
+PAYMOB_API_KEY=your-paymob-api-key
+PAYMOB_INTEGRATION_ID=your-paymob-integration-id
+
 # Database
 
 MONGODB_URI=mongodb://localhost:27017/ezeats
@@ -80,8 +85,10 @@ JWT_SECRET=your-super-secret-jwt-key-here-make-it-long-and-random
 # Paymob Configuration
 
 PAYMOB_API_KEY=your-paymob-api-key
+
 PAYMOB_INTEGRATION_ID=your-paymob-integration-id
-⚠️ in payment/create/route.ts Add YOUR_IFRAME
+
+⚠️ In payment/create/route.ts Add YOUR_IFRAME
 
 ### 🍽️ Adding New Menu Items
 
