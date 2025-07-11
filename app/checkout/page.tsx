@@ -105,7 +105,7 @@ export default function CheckoutPage() {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Your cart is empty</h2>
-          <Button onClick={() => router.push("/menu")}>
+          <Button onClick={() => router.push("/home")}>
             Continue Shopping
           </Button>
         </div>
@@ -220,7 +220,7 @@ export default function CheckoutPage() {
           </Button>
           <Button
             variant="outline"
-            onClick={() => router.push("/menu")}
+            onClick={() => router.push("/home")}
             className="w-full"
           >
             Continue Shopping

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import Footer from "@/components/ui/Footer";
+import Navigation from "@/components/ui/Navigation";
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.dev",
+  title: "Hisham Ibrahim",
+  description: "EATS",
 };
 
 export default function RootLayout({
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body>
         {children}
         <Toaster />
+        <Footer />
       </body>
     </html>
   );

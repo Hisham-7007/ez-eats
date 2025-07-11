@@ -38,10 +38,10 @@ export async function POST(request: NextRequest) {
 
     let user = await User.findOne({ email });
 
-    if (!user && email === "admin@ezeats.com") {
+    if (!user && email === "admin@hisham.com") {
       const hashedPassword = await bcrypt.hash("password123", 10);
       user = await User.create({
-        email: "admin@ezeats.com",
+        email: "admin@hisham.com",
         password: hashedPassword,
         name: "Admin User",
       });

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import Image from "next/image";
+import { Logo1 } from "@/components/ui/LogoShowcase";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -59,7 +59,7 @@ export default function LoginPage() {
           title: "Login successful",
           description: "Welcome to EZ EATS!",
         });
-        router.push("/menu");
+        router.push("/home");
       } else {
         toast({
           title: "Login failed",
@@ -82,14 +82,8 @@ export default function LoginPage() {
     <div className="min-h-screen flex flex-col md:flex-row">
       {/* Branding Section */}
       <div className="md:w-1/2 bg-gradient-to-br from-red-400 to-pink-500 text-white flex flex-col items-center justify-center px-6 py-12">
-        <Image
-          src="/ezeats-logo.png"
-          alt="EZ Eats Logo"
-          width={100}
-          height={100}
-          className="mb-6"
-        />
-        <h1 className="text-4xl font-bold mb-2">Welcome Back</h1>
+        <Logo1 />
+        <h1 className="text-4xl font-bold mb-2 pt-4">Welcome Back</h1>
         <p className="text-lg text-white/90 text-center">
           Login for a contactless dining experience
         </p>
@@ -146,7 +140,7 @@ export default function LoginPage() {
           </Button>
 
           <p className="text-center text-lg text-gray-400 mt-4">
-            Demo Login: <span className="font-mono">admin@ezeats.com</span> /{" "}
+            Demo Login: <span className="font-mono">admin@hisham.com</span> /{" "}
             <span className="font-mono animate-pulse text-pink-600 font-semibold">
               password123
             </span>

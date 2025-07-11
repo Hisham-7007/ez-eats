@@ -58,7 +58,7 @@ npm start
 
 For testing purposes, use these credentials:
 
-- **Email**: `admin@ezeats.com`
+- **Email**: `admin@hisham.com`
 - **Password**: `password123`
 
 ### 3. Environment Setup
