@@ -28,7 +28,7 @@ const Navigation = () => {
       method: "POST",
     });
 
-    router.push("/");
+    router.push("/login");
   };
 
   const navItems = [

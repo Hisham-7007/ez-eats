@@ -47,7 +47,7 @@ export default function ItemDetailsPage() {
           description: "Failed to load item details",
           variant: "destructive",
         });
-        router.push("/home");
+        router.push("/");
       }
     } catch (error) {
       toast({
@@ -55,7 +55,7 @@ export default function ItemDetailsPage() {
         description: "Something went wrong",
         variant: "destructive",
       });
-      router.push("/home");
+      router.push("/");
     } finally {
       setLoading(false);
     }
