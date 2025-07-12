@@ -22,7 +22,7 @@ import Link from "next/link";
 import { Logo1 } from "@/components/ui/LogoShowcase";
 import Navigation from "@/components/ui/Navigation";
 
-export default function MenuPage() {
+export default function HomePage() {
   const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
   const [cart, setCart] = useState<CartItem[]>([]);
   const [loading, setLoading] = useState(true);
