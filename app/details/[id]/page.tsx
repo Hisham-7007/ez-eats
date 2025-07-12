@@ -47,7 +47,9 @@ export default function ItemDetailsPage() {
           description: "Failed to load item details",
           variant: "destructive",
         });
-        router.push("/home");
+        setTimeout(() => {
+          router.replace("/home");
+        }, 100); // تأخير بسيط للسماح للكوكي بالظهور للميدل وير
       }
     } catch (error) {
       toast({
