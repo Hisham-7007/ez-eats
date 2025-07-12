@@ -47,7 +47,7 @@ export default function ItemDetailsPage() {
           description: "Failed to load item details",
           variant: "destructive",
         });
-        router.push("/menu");
+        router.push("/home");
       }
     } catch (error) {
       toast({
@@ -55,7 +55,7 @@ export default function ItemDetailsPage() {
         description: "Something went wrong",
         variant: "destructive",
       });
-      router.push("/menu");
+      router.push("/home");
     } finally {
       setLoading(false);
     }
@@ -151,7 +151,7 @@ export default function ItemDetailsPage() {
             This delicious item seems to have wandered off!
           </p>
           <Button
-            onClick={() => router.push("/menu")}
+            onClick={() => router.push("/home")}
             className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-8 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
           >
             Back to Menu

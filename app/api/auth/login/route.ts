@@ -75,15 +75,21 @@ export async function POST(request: NextRequest) {
       { expiresIn: "24h" }
     );
 
-    const response = NextResponse.json({
-      message: "Login successful",
-      token,
-      user: {
-        id: user._id,
-        email: user.email,
-        name: user.name,
-      },
-    });
+    const response = new NextResponse(
+      JSON.stringify({
+        message: "Login successful",
+        token,
+        user: {
+          id: user._id,
+          email: user.email,
+          name: user.name,
+        },
+      }),
+      {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      }
+    );
 
     response.cookies.set("token", token, {
       httpOnly: true,

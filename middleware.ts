@@ -8,7 +8,7 @@ export function middleware(request: NextRequest) {
 
   // If token exists and user is on login or home page, redirect to /menu
   if (token && (pathname === "/" || pathname === "/login")) {
-    return NextResponse.redirect(new URL("/menu", request.url));
+    return NextResponse.redirect(new URL("/home", request.url));
   }
 
   // If no token and trying to access protected routes
