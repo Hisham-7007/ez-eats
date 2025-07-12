@@ -162,7 +162,7 @@ export default function MenuPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden pt-12">
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-br from-orange-100 via-pink-100 to-purple-100"></div>
         <div className="absolute top-0 left-0 w-full h-full opacity-10">

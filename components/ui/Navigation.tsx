@@ -43,7 +43,7 @@ const Navigation = () => {
       className={`mb-8 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-white/90 backdrop-blur-xl shadow-lg border-b border-white/20"
-          : "bg-gradient-to-r from-orange-100 via-pink-100 to-purple-100 shadow-2xl"
+          : "bg-gradient-to-r from-orange-300 via-pink-100 to-purple-400 shadow-2xl"
       }`}
     >
       <div className="container mx-auto px-4 lg:px-6">
@@ -83,24 +83,9 @@ const Navigation = () => {
             <button className="p-2 rounded-full hover:bg-white/20 transition-all duration-200 group">
               <Search
                 size={20}
-                className="text-gray-700 group-hover:text-purple-600"
+                className="text-gray-800 group-hover:text-purple-600"
               />
             </button>
-
-            {/* Notifications */}
-            <div className="relative">
-              <button className="p-2 rounded-full hover:bg-white/20 transition-all duration-200 group">
-                <Bell
-                  size={20}
-                  className="text-gray-700 group-hover:text-purple-600"
-                />
-                {notifications > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-gradient-to-r from-orange-500 to-pink-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold shadow-lg animate-pulse">
-                    {notifications}
-                  </span>
-                )}
-              </button>
-            </div>
 
             {/* Profile Dropdown */}
             <div className="relative">
@@ -112,7 +97,7 @@ const Navigation = () => {
                   <User size={16} className="text-white" />
                 </div>
                 <span className="text-gray-700 font-medium group-hover:text-purple-600">
-                  John Doe
+                  Hisham
                 </span>
               </button>
 
