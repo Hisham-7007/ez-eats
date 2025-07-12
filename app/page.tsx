@@ -60,7 +60,9 @@ export default function LoginPage() {
           title: "Login successful",
           description: "Welcome to EZ EATS!",
         });
-        router.push("/home");
+        setTimeout(() => {
+          router.replace("/home");
+        }, 100);
       } else {
         toast({
           title: "Login failed",
